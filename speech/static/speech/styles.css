@@ -1,0 +1,144 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Piazzolla:ital,wght@1,600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Patua+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Patua+One&display=swap');
+
+
+
+.w3-sidenav {
+    height: 100%;
+    width: auto;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    overflow-x: hidden;
+    padding-top: 80px;
+    background-color: rgb(16, 39, 58);
+    font-family: 'Patua One', cursive;
+    color: rgb(255, 255, 255);
+    padding-right: 15px;
+}
+
+
+
+/* body {
+    background: url("images/health4.jpg") no-repeat;
+    background-size: cover;
+} */
+
+h1 {
+    text-align: center;
+    flex: 1;
+    font-family: 'Lobster', cursive;
+    color: rgb(240, 8, 8);
+    text-shadow: 2px 2px #050505;
+    
+
+}
+
+h2 {
+    text-align: center;
+    flex: 1;
+    font-family: 'Lobster', cursive;
+}
+
+body { 
+    padding-top: 65px; 
+    background-size: cover;
+ 
+  
+
+}
+
+.fixed-bg {
+    background-image: url("images/wide.jpg");
+    min-height: 500px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+}
+
+.cards{
+    padding: 20px;
+}
+
+.aside{
+    font-family: 'Lobster', cursive;
+    
+}
+
+.list-group{
+    max-height: 300px;
+    margin-bottom: 10px;
+    overflow:scroll;
+    -webkit-overflow-scrolling: touch;
+    overflow-x: hidden;
+    text-align: center;
+
+}
+
+.list-group1{
+    max-height: 300px;
+    margin-bottom: 18px;
+    margin-right: 35px;
+
+}
+
+.clicks {
+    margin-right: 35px;
+}
+
+
+p6 {
+    color: red;
+
+}
+
+
+
+.card {
+    border: solid;
+}
+
+.navbar {
+    
+    background-color: rgb(16, 39, 58);
+
+}
+
+.spc-list {
+    padding-top: 25px;     
+}
+
+h5 {
+    font-style: italic;
+    font-family: 'Patua One', cursive;
+    text-align: center;
+    font-size: 10px;
+}
+
+.sup {
+    padding-top: 25px;
+    font-family: 'Patua One', cursive;
+
+}
+
+h3 {
+    padding-top: 25px;
+    font-family: 'Patua One', cursive;
+
+}
+
+.try {
+    background-image: url(images/ths1.jpg);
+    background-size: cover;
+    height: 100%;
+}
+
+.w3-tag {
+    font-family: 'Anton', sans-serif;
+
+}

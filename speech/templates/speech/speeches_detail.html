@@ -1,0 +1,29 @@
+{% extends "base_generic.html" %}
+
+{% block content %}
+<div class="spc-list">
+  <u><h2>Title: {{ speeches.title }}</h2></u>
+  <p><strong>Date:</strong> {{ speeches.date_of_post }}</p>
+
+  <p><strong>Speaker:</strong> <a href="{% url 'speaker-detail' speeches.Speaker.pk %}">{{ speeches.Speaker }}</a></p> <!-- author detail link not yet defined -->
+  <p><strong>Speech:</strong> " {{ speeches.Post_Summary }} "</p>
+
+
+
+  <hr>
+  <u><h3>Comments</h3></u>
+{% for comment in speeches.comments.all %}
+
+    <div class="comment">
+       
+        <strong>{{ comment.author }}</strong>
+        <p><strong>{{ comment.text }}</strong> <small>{{ comment.created_date|timesince }} ago</small></p>       
+    </div>
+{% empty %}
+    <p>No comments here yet :(</p> 
+
+
+{% endfor %}
+
+{% endblock %}
+</div>

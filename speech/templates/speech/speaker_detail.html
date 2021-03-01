@@ -1,0 +1,27 @@
+<div class="whole text-center">
+
+{% extends "base_generic.html" %}
+
+{% block content %}
+<div class="spc-list">
+
+  <u><h2>Speaker: {{ speaker.first_name }} {{speaker.last_name}}</h2></u>
+  <p><strong>Bio:</strong>  {{ speaker.Bio }}</p>
+
+
+  <div style="margin-left:20px;margin-top:20px">
+    
+    
+    <u><h3>Speaker's Speeches</h3></u>
+    {% for speeches in speaker.speeches_set.all %}
+    <hr>    
+    <li>
+        <a href="{{ speeches.get_absolute_url }}">{{speeches.title}}</a> {{speeches.date_of_post}}
+    </li>
+   
+
+    {% endfor %}
+  </div>
+{% endblock %}
+</div>
+</div>

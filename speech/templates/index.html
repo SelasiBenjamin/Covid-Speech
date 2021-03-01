@@ -1,0 +1,152 @@
+<!-- fixed bg -->
+<div class="fixed-bg"></div>
+
+
+{% extends "base_generic.html" %}
+
+{% block content %}
+
+<body>
+
+
+<div>
+
+
+  <div class="cards container">
+    
+    <div class="row">   
+
+<!-- 1st card -->
+        <div class="col-md-4 ">
+         <div class="card">
+          <div class="card-header" style="background-color: rgb(244, 250, 246);">
+            <u> <h4 class="aside text-dark text-center"> About </h4> </u>
+         </div>
+          <div class="card-body text-center font-italic text-light" style="background-color:rgba(9, 133, 150, 0.822);">
+            <ul class="list-group1">
+              <p1>The CPU is your place for all updates on speeches accross the country
+                on the covid-19 Pandemic. Get all your latest and old information on the 
+                Presidents series of addressess to the nation concerning the Pandemic, as 
+                well as press releases from the Ministry of Health and other speeches from 
+                our honorable Ministers.
+                Stay Safe. Wear a mask.
+            </p1>            
+          </ul>
+      </div>
+        <div class="card-footer text-danger text-center">
+          <p> Always Remember to Wear A Mask</p>        
+        </div>
+         </div>
+    </div>
+
+<!-- 2nd card -->
+
+        <div class="col-md-4">
+        <div class="card">
+
+          <div class="card-body text-center  font-italic text-light" style="background-color:rgba(105, 44, 42, 0.959);">
+            <ul class="clicks">
+              <p1>
+                <br><br><br>
+                <a href="{% url 'speakers' %}"><i class="fa fa-users" style="font-size:75px;"></i></a> <br>
+                <p4>Click to view all speakers</p4>
+                <br><br><br><br>
+
+                <a href="{% url 'speeches' %}"><i class="fa fa-file-text" style="font-size:75px;"></i></a> <br>
+                <p4>Click to view all speeches</p4>
+                <br><br><br>
+
+
+               
+            </p1>            
+          </ul>
+      </div>
+
+       <div class="card-footer text-danger text-center">
+        <p> Always Remember to Wear A Mask</p>
+    </div>
+   </div>
+ </div>
+
+
+ <!-- 3rd card -->
+        <div class="col-md-4 bg">
+            <div class="card">
+                <div class="card-header" style="background-color: rgb(244, 250, 246);">
+                   <u> <h4 class="aside text-dark text-center"><i class="fa fa-newspaper-o" style="font-size:30px"></i> Latest News</h4> </u>
+                </div>
+                <div class="card-body text-center font-italic text-light" style="background-color:rgb(16, 39, 58);">
+
+
+                        <div class="panel-body">
+
+                    <ul class="list-group">
+                    <li><a href="https://ghanahealthservice.org/covid19/">Update on the number of Covid-19 cases in 
+                      Ghana</a></li><br>
+                    
+                    <li><a href="https://www.who.int/news/item/24-02-2021-covid-19-vaccine-doses-shipped-by-the-covax-facility-head-to-ghana-marking-beginning-of-global-rollout">
+                      COVID-19 vaccine doses shipped by the COVAX Facility 
+                      head to Ghana, marking beginning of global rollout</a></li><br>
+
+                    <li><a href="https://citinewsroom.com/2021/02/manual-on-covid-19-vaccination-being-developed-for-public-sensitization-okoe-boye/">Manual on COVID-19 vaccination 
+                      being developed for public sensitization – Okoe Boye</a></li><br>
+
+                    <li><a href="https://www.aljazeera.com/news/2021/2/24/ghana-shuts-down-lgbt-office-rights-group">
+                      Ghana security forces shut down LGBTQ office: Rights group</a></li><br>
+                      
+                    <li><a href="https://reliefweb.int/report/ghana/covid-19-patients-admission-receive-dignity-kits-who">
+                      COVID-19 patients on admission receive Dignity Kits from WHO</a></li><br>
+
+                    <li><a href="https://www.unicef.org/press-releases/ghana-becomes-recipient-historic-first-shipment-covax-vaccine">
+                      Ghana becomes recipient of historic first shipment of COVAX vaccine</a></li><br>
+
+                    <li><a href="https://reliefweb.int/report/world/latter-day-saint-charities-commits-us20-million-support-unicef-s-global-covid-19">
+                      Latter-day Saint Charities Commits US$20 Million in Support of UNICEF’s Global COVID-19 Response</a></li><br>
+                </ul>
+                </div>
+                    </div>
+                 
+           <div class="card-footer text-danger text-center" >
+            <p>Click on the links above to read</p>
+        </div>
+       </div>
+    </div>    
+</div>
+    
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- <div class="container">
+  <p>Welcome to this page, a website developed by <em>The Readers Club</em>!</p>
+
+  <br/>
+  <h2>About</h2>
+  <p>The CPU is a your place for all updates on speeches accross the country
+      on the covid-19 Pandemic. Get all your latest and old information on the 
+      Presidents series of addressess to the nation concerning the Pandemic, as 
+      well as press releases from the Ministry of Health and other speeches from 
+      our honorable Ministers.
+      Stay Safe. Wear a mask.
+  </p>
+  </div> -->
+
+{% endblock %}

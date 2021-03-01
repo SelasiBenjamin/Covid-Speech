@@ -1,0 +1,21 @@
+<div class="try">
+{% extends "base_generic.html" %}
+
+{% block content %}
+
+<div class="spc-list">
+  <u><h2>Speaker List</h2></u>
+  {% if speaker_list %}
+  <strong><ul>
+    {% for speaker in speaker_list %}
+      <li>
+        <a href="{{ speaker.get_absolute_url }}">{{ speaker }}</a>
+      </li>
+    {% endfor %}
+  </ul></strong>
+  {% else %}
+    <p>There are no Speakers available.</p>
+  {% endif %} 
+{% endblock %}
+</div>
+</div>

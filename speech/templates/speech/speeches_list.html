@@ -1,0 +1,30 @@
+<div class="try">
+
+{% extends "base_generic.html" %}
+{% block content %}
+
+
+<div class="spc-list">
+  <u><h2>Speeches & Press Releases</h2></u>
+  {% if speeches_list %}
+  <strong><ul>
+    {% for speeches in speeches_list %}
+      <li>
+        <a href="{{ speeches.get_absolute_url }}">{{ speeches.title }}</a> 
+        <a href="{% url 'speaker-detail' speeches.Speaker.pk %}">||{{speeches.Speaker}}||</a>
+        
+        <p6>({{ speeches.date_of_post }})</p6>
+
+      <!--   <p><a href="{{ speeches.get_absolute_url }}">Comments: {{ speeches.comments.count }}</a></p>
+ -->
+
+      </li>
+    {% endfor %}
+  </ul></strong>
+  {% else %}
+    <p>There are no speeches available.</p>
+  {% endif %} 
+
+{% endblock %}
+</div>
+</div>
